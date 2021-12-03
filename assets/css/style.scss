@@ -1,0 +1,50 @@
+$bg-color: #ffffff;
+$text-color: #292C6D;
+$header-color: #FBF46D;
+$section-color: #B4FE98;
+$footer-color: #998CEB;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 10px;
+}
+
+body{
+  color: $text-color;
+  font-size: 3em;
+  font-weight: bolder;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.page-wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 1em;
+  background-color: $bg-color;
+}
+
+.draggable{
+  padding: 1em 2em;
+  cursor: move;
+  &.dragging{
+    opacity: 0.5;
+  }
+}
+.header{
+  background-color: $header-color;
+}
+.section{
+  flex-grow: 1;
+  background-color: $section-color;
+}
+.footer{
+  background-color: $footer-color;
+
+}
